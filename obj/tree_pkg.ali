@@ -1,0 +1,84 @@
+V "GNAT Lib v2016"
+A -gnatA
+A -mtune=generic
+A -march=pentium4
+P ZX
+
+RN
+RV NO_ALLOCATORS
+RV NO_DIRECT_BOOLEAN_OPERATORS
+RV NO_IO
+RV NO_LOCAL_ALLOCATORS
+RV NO_RECURSION
+RV NO_STANDARD_STORAGE_POOLS
+RV NO_IMPLEMENTATION_PRAGMAS
+RV SPARK_05
+
+U tree_pkg%b		tree_pkg.adb		3ac694b7 NE OO PK GE IL
+W ada%s			ada.ads			ada.ali
+W ada.text_io%s		a-textio.adb		a-textio.ali
+
+U tree_pkg%s		tree_pkg.ads		6f6859a8 BN EE NE OO PK GE IL
+
+D ada.ads		20160516092928 3ffc8e18 ada%s
+D a-except.ads		20160516092928 291912d5 ada.exceptions%s
+D a-ioexce.ads		20160516092926 e4a01f64 ada.io_exceptions%s
+D a-stream.ads		20160516092928 119b8fb3 ada.streams%s
+D a-tags.ads		20160516092932 01f5e3ef ada.tags%s
+D a-textio.ads		20160516092932 386df5d4 ada.text_io%s
+D a-unccon.ads		20160516092930 f9eb8f06 ada.unchecked_conversion%s
+D interfac.ads		20160516092928 5ab55268 interfaces%s
+D i-cstrea.ads		20160516092926 e53d8b8e interfaces.c_streams%s
+D system.ads		20160516092930 2da59038 system%s
+D s-crtl.ads		20160516092926 0ebbdb71 system.crtl%s
+D s-exctab.ads		20160516092930 54135002 system.exception_table%s
+D s-ficobl.ads		20160516092932 078245e4 system.file_control_block%s
+D s-parame.ads		20160516092932 7e2a0d7f system.parameters%s
+D s-soflin.ads		20160516092928 14e1eb6c system.soft_links%s
+D s-stache.ads		20160516092932 a37c21ec system.stack_checking%s
+D s-stalib.ads		20160516092930 09bd3940 system.standard_library%s
+D s-stoele.ads		20160516092932 2dc34a04 system.storage_elements%s
+D s-traent.ads		20160516092928 005bf670 system.traceback_entries%s
+D s-unstyp.ads		20160516092930 34867c83 system.unsigned_types%s
+D s-wchcon.ads		20160516092930 1b7d22d2 system.wch_con%s
+D tree_pkg.ads		20170429184916 6f6859a8 tree_pkg%s
+D tree_pkg.adb		20170430024642 6dc338cb tree_pkg%b
+X 1 ada.ads
+16K9*Ada 19e8 23|1r6 1r23
+X 6 a-textio.ads
+49K13*Text_IO 471e16 23|1w10 1r27
+X 22 tree_pkg.ads
+2+12 Item_Type 4r30 14r30 19r39 32r13 23|44r26 85r35
+4U22 put 4>26 23|101s10
+4*26 i{2+12}
+6k12*Tree_Pkg 2z12 4z22 25E9 37l8 37e16 23|2b14 110l5 110t13
+7P12*Tree 9r24 11r29 12r30 14r48 14r61 16r26 16r39 17r27 17r40 19r26 21r36
+. 27c9 30r13 31r14 35r20 23|10r25 27r26 44r43 44r56 45r16 61r22 61r35 73r23
+. 73r36 85r22 97r32
+9p7*Empty{7P12} 35c4
+11V16*is_leaf{boolean} 11>25 23|10b13 19l8 19t15
+11p25 t{7P12} 11r76 23|10b22 14r10 14r28
+12V16*is_empty{boolean} 11s66 12>26 16s60 17s61 19s65 23|27b13 36l8 36t16
+. 100s14
+12p26 t{7P12} 23|27b23 31r10
+14V16*new_tree{7P12} 14>26 14>41 14>44 23|44b13 53l8 53t16
+14*26 i{2+12} 23|44b23 50r27
+14p41 l{7P12} 23|44b37 48r27
+14p44 r{7P12} 23|44b40 49r28
+16V16*left{7P12} 16>22 23|61b13 65l8 65t12
+16p22 t{7P12} 16r70 23|61b19 64r14
+17V16*right{7P12} 17>23 23|73b13 77l8 77t13
+17p23 t{7P12} 17r71 23|73b20 76r14
+19V16*data{2+12} 19>22 23|85b13 89l8 89t12
+19p22 t{7P12} 19r75 23|85b19 88r14
+21U17*put_pre_order 21>32 23|97b14 103s10 104s10 107l8 107t21
+21p32 t{7P12} 23|97b29 100r23 101r14 103r24 104r24
+25R9 TreeNode 27r24 29c9 33e14 23|45r28
+30p7 left{7P12} 23|14r12 48m19 64r16 103r26
+31p7 right{7P12} 23|14r30 49m19 76r16 104r26
+32*7 data{2+12} 23|50m19 88r16 101r16
+X 23 tree_pkg.adb
+11b7 isLeaf{boolean} 15m10 18r14
+28b7 isEmpty{boolean} 32m10 35r14
+45p7 newTree{22|7P12} 48r7 49r7 50r7 52r14
+

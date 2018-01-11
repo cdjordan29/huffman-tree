@@ -1,0 +1,4 @@
+project program_five is 
+   for main use ("code_strings.adb");
+   for object_dir use "obj";
+end program_five;

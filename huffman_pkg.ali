@@ -1,0 +1,92 @@
+V "GNAT Lib v2016"
+P SS ZX
+
+RN
+RV NO_DIRECT_BOOLEAN_OPERATORS
+RV NO_IMPLICIT_CONDITIONALS
+RV NO_SECONDARY_STACK
+RV NO_STANDARD_STORAGE_POOLS
+RV NO_DEFAULT_INITIALIZATION
+RV NO_DYNAMIC_SIZED_OBJECTS
+RV NO_IMPLICIT_LOOPS
+RV SPARK_05
+
+U huffman_pkg%b		huffman_pkg.adb		7d2b6a8b NE OO PK IL
+W ada%s			ada.ads			ada.ali
+W ada.integer_text_io%s	a-inteio.ads		a-inteio.ali
+W system.assertions%s	s-assert.adb		s-assert.ali
+W system.secondary_stack%s  s-secsta.adb	s-secsta.ali
+
+U huffman_pkg%s		huffman_pkg.ads		32478a1d EE NE OO PK IL
+
+D ada.ads		20160516092928 3ffc8e18 ada%s
+D a-except.ads		20160516092928 291912d5 ada.exceptions%s
+D a-inteio.ads		20160516092932 f64b89a4 ada.integer_text_io%s
+D a-ioexce.ads		20160516092926 e4a01f64 ada.io_exceptions%s
+D a-stream.ads		20160516092928 119b8fb3 ada.streams%s
+D a-tags.ads		20160516092932 01f5e3ef ada.tags%s
+D a-textio.ads		20160516092932 386df5d4 ada.text_io%s
+D a-tiinio.ads		20160516092928 aa04e5d6 ada.text_io.integer_io%s
+D a-unccon.ads		20160516092930 f9eb8f06 ada.unchecked_conversion%s
+D huffman_pkg.ads	20170425233424 32478a1d huffman_pkg%s
+D huffman_pkg.adb	20170429162256 b9276932 huffman_pkg%b
+D interfac.ads		20160516092928 5ab55268 interfaces%s
+D i-cstrea.ads		20160516092926 e53d8b8e interfaces.c_streams%s
+D system.ads		20160516092930 2da59038 system%s
+D s-assert.ads		20160516092930 cd8d2c94 system.assertions%s
+D s-crtl.ads		20160516092926 0ebbdb71 system.crtl%s
+D s-exctab.ads		20160516092930 54135002 system.exception_table%s
+D s-ficobl.ads		20160516092932 078245e4 system.file_control_block%s
+D s-parame.ads		20160516092932 7e2a0d7f system.parameters%s
+D s-secsta.ads		20160516092930 86a2856d system.secondary_stack%s
+D s-soflin.ads		20160516092928 14e1eb6c system.soft_links%s
+D s-stache.ads		20160516092932 a37c21ec system.stack_checking%s
+D s-stalib.ads		20160516092930 09bd3940 system.standard_library%s
+D s-stoele.ads		20160516092932 2dc34a04 system.storage_elements%s
+D s-traent.ads		20160516092928 005bf670 system.traceback_entries%s
+D s-unstyp.ads		20160516092930 34867c83 system.unsigned_types%s
+D s-wchcon.ads		20160516092930 1b7d22d2 system.wch_con%s
+X 1 ada.ads
+16K9*Ada 19e8 11|1r6 1r31
+X 3 a-inteio.ads
+18K13*Integer_Text_IO[8|46] 11|1w10 1r35
+X 8 a-tiinio.ads
+66U14*Put 11|28s10[3|18]
+X 10 huffman_pkg.ads
+3K9*huffman_pkg 36l8 36e19 11|2b14 82l5 82t16
+4E9*Bit{character} 11r62 15r63
+7A15*A_String{string}<integer> 17r35 23r39 24r42 26r31 28r31 33r69 11|10r36
+. 40r39 52r28 64r28 76r63 77r22
+10A15*H_String{string}<integer> 18r35 31r61 33r30 11|76r25
+11e40 c=11:45{character} 11r57
+14A15*RH_String{string}<integer> 26r94 28r75 30r60 11|52r89 53r23 64r71 65r23
+15e40 c=15:45{character} 15r58
+17P12*A_String_Ptr(7A15)
+18P12*H_String_Ptr(10A15) 21r50
+20A12*Frequency_Table(natural)<character> 23r56 33r45 11|10r53 11r24 76r39
+21A12*Huffman_Table(18P12)<character> 24r59 26r45 11|40r56 41r24 52r41
+23V16*create_freq_table{20A12} 23>35 11|10b13 32l8 32t25
+23a35 s{7A15} 11|10b32 15r19 16r22 19r22 21r27
+24V16*create_huffman_table{21A12} 24>38 29s52 11|40b13 44l8 44t28
+24a38 s{7A15} 11|40b35
+26V16*to_huffman{14A15} 26>28 26>41 26>60 29s38 11|52b13 56l8 56t18
+26a28 s{7A15} 11|52b25
+26a41 c{21A12} 11|52b38
+26b60 spaces{boolean} 11|52b56
+28V16*to_huffman{14A15} 28>28 28>41 34s18 11|64b13 68l8 68t18
+28a28 s{7A15} 29r49 29r73 11|64b25
+28b41 spaces{boolean} 29r77 30r28 31r28 11|64b38
+33V16*to_ascii{7A15} 33>26 33>40 34r29 11|76b13 80l8 80t16
+33a26 s{10A15} 34r55 11|76b22
+33a40 ft{20A12} 11|76b35
+X 11 huffman_pkg.adb
+11a7 temp_Freq_Table{10|20A12} 27m10 28r14 31r14
+12e7 tempChar{character} 16m10 21r16 27r26 28r30
+13i7 tempNum{natural} 17m10 22m16 22r27 27r39
+15i11 i{integer} 16r24
+19i14 j{integer} 21r29
+41a7 temp_Huff_Table{10|21A12} 43r14
+53a7 temp_RH_String{10|14A15} 55r14
+65a7 temp_RH_String{10|14A15} 67r14
+77a7 temp_A_String{10|7A15} 79r14
+
